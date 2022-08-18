@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("./Images/background2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+/* declaring a global variable to be used on all the paragraphs font on the webpage */
+:root {
+  --font-color: white;
+  --phone-number-color-1: purple;
+  --phone-number-color-2: green;
+  --phone-number-color-3: yellow;
+  --phone-number-color-4: brown;
+  --phone-number-color-5: #f5f558;
+  --span-color: #b2beb5;
+}
+
+.main-container,
+.text-container {
+  height: 100%;
+}
+
+.text-container {
+  display: flex;
+}
+
+.whatsapp-text {
+  width: 100%;
+  height: auto;
+  background-color: #128c7e;
+  color: var(--font-color);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.first-container {
+  width: 30%;
+  height: 100%;
+}
+
+.second-container {
+  width: 70%;
+  height: 100%;
+}
+
+.status {
+  display: flex;
+  border: 1px solid green;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #075e54;
+}
+
+.icon-head {
+  padding: 0px 10px;
+}
+
+img#pfp {
+  width: 45px;
+  border-radius: 100%;
+  height: 40px;
+  padding: 1px;
+}
+
+i {
+  color: white;
+  font-size: 20px;
+}
+
+.search-section {
+  padding: 10px;
+  background-color: #075e54;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-section form input {
+  padding: 10px 170px;
+  padding-inline-start: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.chat1 {
+  display: flex;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header p,
+.chat p {
+  color: var(--font-color);
+}
+
+.chat-header .yesterday {
+  text-align: right;
+  padding-left: 240px;
+}
+
+.yt2 {
+  padding-left: 210px;
+}
+
+.chat-header .junior {
+  padding-left: 100px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  color: #333;
+  background-color: #333;
+}
+
+#profile-photo {
+  width: 40px;
+  border-radius: 100%;
+  height: 40px;
+  /* I really don't know why this worked though */
+  padding: 1px;
+  margin-left: 5px;
+}
+
+.message {
+  padding-left: 15px;
+  padding-right: 2px;
+}
+
+.chat {
+  background-color: #075e54;
+  padding: 5px;
+}
+
+.chats {
+  background-color: #075e54;
+  padding: 5px 0px;
+}
+
+/* .second-container {
+  background-image: url("./Images/background2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 70%;
+} */
+
+.fa-check {
+  font-size: 20px;
+  color: #575656;
+}
+
+.second-container {
+  height: 100%;
+}
+
+.third-container {
+  height: 70px;
+  /* position: fixed; */
+  background-color: #075e54;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.third-container form input {
+  padding: 15px 100px;
+  width: 700px;
+  padding-inline-start: 20px;
+  /* background-color: #333; */
+  color: black;
+  /* position: relative;
+  left: 120px; */
+  position: fixed;
+  bottom: 10px;
+  right: 100px;
+}
+
+.fa-paperclip {
+  position: fixed;
+  left: 490px;
+}
+
+.fa-microphone-lines {
+  position: fixed;
+  right: 40px;
+}
+
+/* the header section of the chat section */
+.contacts-header {
+  display: flex;
+  background-color: #075e54;
+  width: 100%;
+  height: 60px;
+}
+
+.info img {
+  width: 45px;
+  border-radius: 100%;
+  height: 45px;
+  padding: 1px;
+}
+
+.photo {
+  padding: 10px;
+}
+
+.info,
+.menu {
+  display: flex;
+}
+
+.info {
+  width: 80%;
+}
+
+.name {
+  padding: 10px;
+}
+
+.name h4 {
+  padding-bottom: 3px;
+  color: #f3f3f3;
+}
+
+.menu {
+  padding: 10px;
+}
+
+.menu p,
+.menu i {
+  padding: 10px 20px;
+}
+
+.menu p {
+  line-height: 20px;
+  font-size: x-large;
+  color: white;
+}
+
+.chat-container-1 {
+  background-color: #333;
+  height: 100px;
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.chat-container-1 #section-name-1 {
+  color: var(--phone-number-color-1);
+  font-weight: bold;
+}
+
+.chat-container-2 {
+  height: 40px;
+  background-color: #075e54;
+  border: none;
+  font-size: 13px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.color {
+  height: 100%;
+  width: 1%;
+  float: left;
+  background-color: green;
+  margin: 0;
+  border-radius: 2px;
+}
+
+.section-name p {
+  color: var(--phone-number-color-5);
+}
+
+.cover {
+  display: block;
+  padding: 5px 10px;
+}
+
+.udh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3f3f3;
+}
+
+.paragraph {
+  padding-top: 3px;
+}
+
+span {
+  color: var(--span-color);
+  font-weight: lighter;
+}
+
+.numb {
+  color: var(--phone-number-color-4);
+}
+
+.my-message {
+  position: relative;
+  left: 450px;
+}
+
+.new-section {
+  height: 60px;
+  background-color: #075e54;
+}
+
+.udrst {
+  padding-top: 5px;
+}
