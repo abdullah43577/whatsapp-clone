@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("./Images/background2.jpg");
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #0b141a;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +16,7 @@ body {
 
 /* declaring a global variable to be used on all the paragraphs font on the webpage */
 :root {
-  --font-color: white;
+  --font-color: #e9edef;
   --phone-number-color-1: purple;
   --phone-number-color-2: green;
   --phone-number-color-3: yellow;
@@ -54,11 +55,10 @@ body {
 
 .status {
   display: flex;
-  border: 1px solid green;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #075e54;
+  background-color: #202c33;
 }
 
 .icon-head {
@@ -79,7 +79,7 @@ i {
 
 .search-section {
   padding: 10px;
-  background-color: #075e54;
+  background-color: #111b21;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,6 +90,7 @@ i {
   padding-inline-start: 20px;
   border-radius: 5px;
   border: none;
+  background-color: #202c33;
 }
 
 .chat1 {
@@ -142,23 +143,14 @@ hr {
 }
 
 .chat {
-  background-color: #075e54;
+  background-color: #111b21;
   padding: 5px;
 }
 
 .chats {
-  background-color: #075e54;
+  background-color: #111b21;
   padding: 5px 0px;
 }
-
-/* .second-container {
-  background-image: url("./Images/background2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 70%;
-} */
 
 .fa-check {
   font-size: 20px;
@@ -170,43 +162,52 @@ hr {
 }
 
 .third-container {
-  height: 70px;
+  height: 60px;
   /* position: fixed; */
-  background-color: #075e54;
+  background-color: #202c33;
   width: 100%;
   position: fixed;
   bottom: 0px;
 }
 
 .third-container form input {
-  padding: 15px 100px;
+  height: 45px;
   width: 700px;
   padding-inline-start: 20px;
-  /* background-color: #333; */
-  color: black;
-  /* position: relative;
-  left: 120px; */
+  background-color: #2a3942;
+  color: #f3f3f3;
   position: fixed;
-  bottom: 10px;
+  bottom: 9px;
   right: 100px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
 }
 
 .fa-paperclip {
   position: fixed;
   left: 490px;
+  bottom: 20px;
+}
+
+.fa-face-grin {
+  position: fixed;
+  left: 420px;
+  bottom: 20px;
 }
 
 .fa-microphone-lines {
   position: fixed;
   right: 40px;
+  bottom: 20px;
 }
 
 /* the header section of the chat section */
 .contacts-header {
   display: flex;
-  background-color: #075e54;
+  background-color: #202c33;
   width: 100%;
-  height: 60px;
+  height: 65px;
 }
 
 .info img {
@@ -254,7 +255,7 @@ hr {
 }
 
 .chat-container-1 {
-  background-color: #333;
+  background-color: #202c33;
   height: 100px;
   width: 50%;
   margin: 10px;
@@ -270,7 +271,7 @@ hr {
 
 .chat-container-2 {
   height: 40px;
-  background-color: #075e54;
+  background-color: #1d282f;
   border: none;
   font-size: 13px;
   border-radius: 5px;
@@ -299,7 +300,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f3f3f3;
+  color: #e9edef;
 }
 
 .paragraph {
@@ -322,9 +323,18 @@ span {
 
 .new-section {
   height: 60px;
-  background-color: #075e54;
+  background-color: #202c33;
 }
 
 .udrst {
   padding-top: 5px;
+}
+
+div.name p {
+  color: #8696a0;
+  font-size: 14px;
+}
+
+div.paragraph p {
+  color: #a5a9a4;
 }
