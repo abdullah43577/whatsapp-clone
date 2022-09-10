@@ -25,6 +25,22 @@ body {
   --span-color: #b2beb5;
 }
 
+/* custom scroll bar section */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* End of scrollbar section */
+
 .main-container,
 .text-container {
   height: 100%;
@@ -93,32 +109,16 @@ i {
   background-color: #202c33;
 }
 
-.chat1 {
-  display: flex;
-}
-
 .chat-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 330px;
 }
 
 .chat-header p,
 .chat p {
   color: var(--font-color);
-}
-
-.chat-header .yesterday {
-  text-align: right;
-  padding-left: 240px;
-}
-
-.yt2 {
-  padding-left: 210px;
-}
-
-.chat-header .junior {
-  padding-left: 100px;
 }
 
 hr {
@@ -140,15 +140,18 @@ hr {
 .message {
   padding-left: 15px;
   padding-right: 2px;
+  border-bottom: 1px solid #333;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 .chat {
   background-color: #111b21;
   padding: 5px;
+  display: flex;
 }
 
 .chats {
-  background-color: #111b21;
   padding: 5px 0px;
 }
 
